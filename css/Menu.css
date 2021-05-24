@@ -1,0 +1,319 @@
+img {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: rgb(109, 103, 103) !important;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+.heading {
+  font-family: "Luckiest Guy";
+  color: rgb(109, 103, 103);
+  font-style: 100;
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+  line-height: 50px;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: 5px;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-family: Mulish;
+  text-align: center;
+}
+
+.slider:before {
+  position: absolute;
+  /* content: ""; */
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(109, 103, 103);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(109, 103, 103);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.Link {
+  color: rgb(92, 88, 88);
+  font-family: "Mulish";
+  font-weight: bold;
+  font-size: 1em;
+}
+.Carousel_container {
+  height: 90vh;
+}
+.Carousel_container img {
+  height: 90vh;
+}
+.carousel-item h5 {
+  font-family: "Luckiest Guy";
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+  line-height: 50px;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+.carousel-item p {
+  font-family: Mulish;
+  font-weight: bold;
+  color: lightcyan;
+}
+.Each_menu {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Each_image {
+  height: 300px;
+  width: 300px;
+  transition: 1.3s all;
+  z-index: 2;
+  perspective: 1000px;
+}
+/* .Each_menu_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+} */
+.content {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: 2s all;
+  background-color: #0a223d;
+  perspective: 1000px;
+  padding: 15px 15px 0 15px;
+}
+
+.Each_menu:hover .Each_image {
+  width: 0px;
+}
+
+.Each_menu:hover .content {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.Each_menu_container > div {
+  display: grid;
+  grid-template-columns: 7% 25% 6% 25% 6% 25% 6%;
+}
+
+.Menu_container h1 {
+  font-family: "Luckiest Guy";
+  color: rgb(109, 103, 103);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin: 0 0 15px 0;
+  padding-top: 15px;
+  margin-left: 15px;
+  line-height: 50px;
+  font-weight: 100;
+  text-align: center;
+  font-size: 2em;
+}
+
+.content h3 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.content h4 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9em;
+  line-height: 160.6%;
+  color: #ffffff;
+}
+
+.original_price {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #ffffff;
+}
+
+.kg {
+  font-family: Mulish;
+  font-size: 0.8em;
+}
+.Offer_price {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 30px;
+  color: #ffffff;
+}
+.Book_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  border-radius: 4px;
+  height: 40px;
+  background: #ec1f46;
+  cursor: pointer;
+}
+
+.Book_button div {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.Container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Price_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Text_container {
+  opacity: 0;
+  transition: 2.2s all;
+  transform: translateY(-20px);
+}
+
+.Each_menu:hover .Text_container {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Menu_container {
+  background-color: rgba(243, 239, 239, 0.568);
+}
+
+#navbar {
+  padding: 2px 30px 0 20px !important;
+}
+
+main {
+  opacity: 0;
+  animation: ani 2s linear forwards;
+}
+
+@keyframes ani {
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Each_menu_container > div {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .content {
+    width: 80vw;
+  }
+  .Each_image {
+    width: 80vw;
+  }
+  .heading {
+    margin: 0;
+    padding: 0;
+  }
+  nav svg {
+    margin: 0;
+  }
+  #navbar {
+    padding: 2px 5px 0 5px !important;
+  }
+}
