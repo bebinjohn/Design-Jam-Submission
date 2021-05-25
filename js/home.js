@@ -45,7 +45,7 @@ $toogle.addEventListener('click',()=>{
     for(let i=0;i<$h1.length;i++) $h1[i].style.color='rgb(236, 233, 233)'
     document.querySelector('h3').style.color='cyan'
     document.querySelector('h4').style.color='lightcyan';
-    document.querySelector('.Topping_container').style.backgroundImage='url("../assets/Images/images/darkbg.jpg")';
+    document.querySelector('.Topping_container').style.backgroundImage='url("https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-091-eternal-constance.png")';
     document.querySelector('.Menu_container').style.background='#415764'
     document.querySelector('.Testimonial_section').style.background='#980036'
     document.querySelector('.footer').style.background='#040348'
@@ -60,7 +60,7 @@ $toogle.addEventListener('click',()=>{
         document.querySelector('h3').style.color='rgb(18, 100, 128)'
         document.querySelector('h4').style.color='#b4720e';
         document.querySelector('.Topping_container').style.backgroundImage='none';
-        document.querySelector('.Topping_container').style.backgroundImage='url("../assets/Images/images/lightbg.png")';
+        document.querySelector('.Topping_container').style.backgroundImage='url("https://webgradients.com/public/webgradients_png/008%20Rainy%20Ashville.png")';
         document.querySelector('.Menu_container').style.background='rgba(250, 201, 195, 0.692)'
         document.querySelector('.Testimonial_section').style.background='rgba(173, 216, 230, 0.562)'
         document.querySelector('.footer').style.background='#dee4e7'

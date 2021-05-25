@@ -4,14 +4,14 @@ var aText = new Array(
     "We love to create donuts, and we love to create smiles! Our many fans tell us we are on the right track, and while there may be other donuts out there—we feel we’ve found a pretty special combination. We’re keeping it simple and delicious!",
       'This is our family serving your family, and we want you to come back! '
     );
-    var iSpeed = 20; // time delay of print out
-    var iIndex = 0; // start printing array at this posision
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
+    var iSpeed = 20;
+    var iIndex = 0; 
+    var iArrLength = aText[0].length; 
+    var iScrollAt = 20; 
      
-    var iTextPos = 0; // initialise text positionvbwbvo
-    var sContents = ''; // initialise contents variable
-    var iRow; // initialise current row
+    var iTextPos = 0; 
+    var sContents = ''; 
+    var iRow; 
      
     function typewriter()
     {
