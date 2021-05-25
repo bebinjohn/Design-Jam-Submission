@@ -274,11 +274,54 @@ input:checked + .slider:before {
 }
 
 .Menu_container {
-  background-color: rgba(243, 239, 239, 0.568);
+  transform: translateY(100vh);
+  width: 100%;
+  opacity: 0;
+  animation: come 15s linear forwards;
+  background-color: lightgray;
 }
 
 #navbar {
   padding: 2px 30px 0 20px !important;
+}
+body {
+  overflow: hidden;
+  animation: speak 30s linear forwards;
+}
+@keyframes speak {
+  to {
+    overflow: scroll;
+  }
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(-30vw);
+  }
+  20% {
+    transform: translateX(5vw);
+  }
+  30% {
+    transform: translateX(10vw);
+  }
+  50% {
+    transform: translate(15vw);
+  }
+  60% {
+    transform: translate(20vw);
+  }
+  70% {
+    transform: translate(20vw);
+  }
+  80% {
+    transform: translate(5vw);
+  }
+  90% {
+    transform: translate(-10vw);
+  }
+  100% {
+    transform: translate(-100vw);
+  }
 }
 
 main {
@@ -292,6 +335,61 @@ main {
   }
 }
 
+.box {
+  width: 40%;
+  height: 100px;
+  background-color: black;
+  padding: 20px;
+  position: relative;
+  margin: 20px;
+  float: left;
+}
+
+.box p {
+  color: white;
+  font-family: "Akaya Kanadaka";
+  font-size: 1em;
+  margin: 10px 50px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.box.arrow-left:after {
+  content: " ";
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid black;
+  border-left: none;
+  border-bottom: 15px solid transparent;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+.Welcome {
+  display: flex;
+  transform: translateX(-100vw);
+  animation: run 8s linear;
+  align-items: center;
+  height: 90vh;
+}
+.Welcome img {
+  width: 30%;
+  height: 50%;
+}
+
+@keyframes come {
+  to {
+    transform: translateY(0px);
+    position: absolute;
+    top: 10vh;
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 600px) {
   .Each_menu_container > div {
     display: flex;
@@ -321,5 +419,17 @@ main {
   }
   .Carousel_container img {
     height: 50vh;
+  }
+  .box p {
+    margin: 0;
+    font-size: 0.7em;
+  }
+  .Welcome img {
+    height: 30%;
+    width: 30%;
+  }
+  body,
+  html {
+    font-size: 14px;
   }
 }

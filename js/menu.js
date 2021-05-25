@@ -29,7 +29,7 @@ $toogle.addEventListener('click',()=>{
         document.querySelector('.path').removeAttribute('stroke');
     document.querySelector('.path').setAttribute('stroke','black');
         for(let i=0;i<$anchor.length;i++) $anchor[i].style.color='rgb(109, 103, 103)';
-        document.querySelector('.Menu_container').style.background='rgba(243, 239, 239, 0.568)';
+        document.querySelector('.Menu_container').style.background='lightgray';
         document.getElementById('menu').style.color='rgb(109, 103, 103)';
         for(let i=0;i<$h3.length;i++)$h3[i].style.color='white'
         for(let i=0;i<$h4.length;i++)$h4[i].style.color='white'

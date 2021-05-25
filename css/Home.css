@@ -19,6 +19,23 @@ body {
   height: 100vh;
   width: 100%;
 }
+.whole_container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.whole_container::-webkit-scrollbar-track {
+  background: rgb(181, 219, 231);
+}
+
+.whole_container::-webkit-scrollbar-thumb {
+  background-color: rgb(238, 164, 175);
+  border-radius: 10px;
+}
+
+.whole_container::-webkit-scrollbar-thumb:hover {
+  background: #ecc181a9;
+}
 
 /* html {
   scroll-behavior: smooth;

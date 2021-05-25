@@ -1,5 +1,4 @@
 
-
 const $fill=document.getElementById('fill')
 document.querySelector('.stawberry_selector').addEventListener('click',()=>{
     if($fill.hasAttribute('fill')) $fill.removeAttribute('fill');
