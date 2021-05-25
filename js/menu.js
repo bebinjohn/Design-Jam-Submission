@@ -7,7 +7,19 @@ const $h3=document.getElementsByTagName('h3')
 const $h4=document.getElementsByTagName('h4')
 const $article=document.getElementsByTagName('article')
 let flag=true;
+let flag1=true;
 
+document.getElementById('toggle').addEventListener('click',()=>{
+    if(window.innerWidth<700){
+        if(flag1){
+        document.querySelector('.Menu_container').style.marginTop='130px';
+        flag1=false;
+        }else{
+            document.querySelector('.Menu_container').style.marginTop='0px';
+            flag1=true
+        }
+    }
+})
 
 $toogle.addEventListener('click',()=>{
     if(flag){
