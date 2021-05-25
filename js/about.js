@@ -4,7 +4,9 @@ var aText = new Array(
     "We love to create donuts, and we love to create smiles! Our many fans tell us we are on the right track, and while there may be other donuts out there—we feel we’ve found a pretty special combination. We’re keeping it simple and delicious!",
       'This is our family serving your family, and we want you to come back! '
     );
-    var iSpeed = 20;
+    var iSpeed;
+    if(window.innerWidth<700) iSpeed=30;
+    else iSpeed=20;
     var iIndex = 0; 
     var iArrLength = aText[0].length; 
     var iScrollAt = 20; 

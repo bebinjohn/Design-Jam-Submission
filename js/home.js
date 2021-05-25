@@ -22,9 +22,17 @@ document.querySelector('.Gotop_link').addEventListener('click',()=>{
     document.getElementById('Top').scroll(0,100)
 })
 
-document.querySelector('.Try_button').addEventListener('click',()=>{
-    document.getElementById('Top').scrollBy(0,100)
-})
+if(window.innerWidth<700){
+    document.querySelector('.Try_button').addEventListener('click',()=>{
+        document.getElementById('Top').scrollBy(0,650)
+    })
+}
+else{
+    document.querySelector('.Try_button').addEventListener('click',()=>{
+        document.getElementById('Top').scrollBy(0,100)
+    })
+}
+
 
 
 //Toogle button

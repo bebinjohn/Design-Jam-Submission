@@ -316,4 +316,10 @@ main {
   #navbar {
     padding: 2px 5px 0 5px !important;
   }
+  .Carousel_container {
+    height: 50vh;
+  }
+  .Carousel_container img {
+    height: 50vh;
+  }
 }
