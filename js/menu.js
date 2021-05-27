@@ -17,10 +17,20 @@ let flag1=true;
 document.getElementById('toggle').addEventListener('click',()=>{
     if(window.innerWidth<700){
         if(flag1){
-        document.querySelector('.Menu_container').style.marginTop='130px';
+            if(document.querySelector('.Menu_container')){
+                document.querySelector('.Menu_container').style.marginTop='130px';
+            }
+            else{
+                document.querySelector('.Menu_container1').style.marginTop='130px';
+            }
         flag1=false;
         }else{
-            document.querySelector('.Menu_container').style.marginTop='0px';
+            if(document.querySelector('.Menu_container')){
+                document.querySelector('.Menu_container').style.marginTop='0px';
+            }
+            else{
+                document.querySelector('.Menu_container1').style.marginTop='0px';
+            }
             flag1=true
         }
     }

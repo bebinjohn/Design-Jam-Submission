@@ -43,7 +43,7 @@ const $anchor=document.getElementsByTagName('a');
 const $h1=document.getElementsByTagName('h1');
 const $h2=document.getElementsByTagName('h2')
 const $head=document.querySelectorAll('.head');
-const $h6=document.querySelectorAll('h6')
+const $h5=document.querySelectorAll('h5')
 const $footlink=document.querySelectorAll('#foot_link');
 let flag=true;
 
@@ -57,7 +57,7 @@ const dark=()=>{
         } 
         for(let i=0;i<$h2.length;i++) $h2[i].style.color='rgb(236, 233, 233)'
         for(let i=0;i<$h1.length;i++) $h1[i].style.color='rgb(236, 233, 233)'
-        $h6.forEach((each)=>each.style.color='white')
+        $h5.forEach((each)=>each.style.color='white')
         if( document.querySelector('#main').classList.contains('main')) document.querySelector('#main').classList.remove('main')
         document.querySelector('#main').classList.add('main1');
         if( document.querySelector('#navbar').classList.contains('bg-light')) document.querySelector('#navbar').classList.remove('bg-light')
@@ -73,7 +73,7 @@ const dark=()=>{
         if( document.querySelector('#service').classList.contains('Delivery_section')) document.querySelector('#service').classList.remove('Delivery_section')
         document.querySelector('#service').classList.add('Delivery_section1');
         document.querySelector('.Testimonial_section').style.background='none'
-        document.querySelector('.footer_background').style.background='#040348'
+        document.querySelector('.footer').style.background='#040348'
         $footlink.forEach((each)=>each.style.cssText='color:white !important')
         flag=false
         }
@@ -98,9 +98,9 @@ const dark=()=>{
         if( document.querySelector('#service').classList.contains('Delivery_section1')) document.querySelector('#service').classList.remove('Delivery_section1')
         document.querySelector('#service').classList.add('Delivery_section');
             document.querySelector('.Testimonial_section').style.background='rgba(173, 216, 230, 0.562)'
-            document.querySelector('.footer_background').style.background='#dee4e7'
+            document.querySelector('.footer').style.background='#dee4e7'
             $footlink.forEach((each)=>each.style.cssText='color:gray !important')
-            $h6.forEach((each)=>each.style.color='black')
+            $h5.forEach((each)=>each.style.color='black')
             flag=true;
         }
 }
@@ -124,10 +124,18 @@ document.getElementById('order').addEventListener('click',()=>{
 
 
 document.getElementById('button').addEventListener('click',()=>{
+    if(window.innerWidth<800){
+        document.querySelector('.Order_container').style.animation='rightmob 2s linear forwards';
+    document.querySelector('.Each_section_container').style.transition="10s all";
+    document.querySelector('#order').disabled=false;
+    document.querySelector('.Each_section_container').style.opacity=1;
+    }
+    else {
     document.querySelector('.Order_container').style.animation='right 3s linear forwards';
     document.querySelector('.Each_section_container').style.transition="10s all";
     document.querySelector('#order').disabled=false;
     document.querySelector('.Each_section_container').style.opacity=1;
+    }
 })
 
 

@@ -5,7 +5,7 @@ var aText = new Array(
       'This is our family serving your family, and we want you to come back! '
     );
     var iSpeed;
-    if(window.innerWidth<700) iSpeed=40;
+    if(window.innerWidth<700) iSpeed=30;
     else iSpeed=30;
     var iIndex = 0; 
     var iArrLength = aText[0].length; 

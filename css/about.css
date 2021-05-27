@@ -220,6 +220,9 @@ body {
     overflow-y: scroll;
     margin-right: 5px;
   }
+  .box::-webkit-scrollbar {
+    width: 0 !important;
+  }
   .box p {
     margin: 0;
   }
@@ -238,6 +241,18 @@ body {
   .content_mobile {
     width: 100%;
     display: flex;
+    margin-bottom: 20%;
     flex-direction: column;
+  }
+  .Footer_input input {
+    width: 200px;
+    height: 30px;
+  }
+  .Footer_input > div {
+    width: 40px;
+    height: 30px;
+  }
+  body {
+    background-attachment: unset;
   }
 }

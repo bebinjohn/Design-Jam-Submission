@@ -644,7 +644,7 @@ nav > ul > li a {
   background-image: linear-gradient(
     5deg,
     rgb(58, 57, 57) 55% 50%,
-    rgb(37, 20, 134) 50%
+    rgb(16, 72, 145) 50%
   );
   height: 100%;
   padding-bottom: 30px;
@@ -790,6 +790,27 @@ nav > ul > li a {
   }
   100% {
     transform: translateX(45vh);
+    opacity: 0;
+  }
+}
+
+@keyframes rightmob {
+  0% {
+    transform: translateX(1vh);
+  }
+  30% {
+    transform: translateX(3vh);
+  }
+  50% {
+    transform: translateX(2vh);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(1vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0vh);
     opacity: 0;
   }
 }
@@ -952,7 +973,7 @@ nav > ul > li a {
 .footer .Links li a:hover {
   color: salmon !important;
 }
-.footer .Links_section h6 {
+.footer .Links_section h5 {
   font-family: Mulish;
   font-size: 1.2em;
   font-weight: bold;
@@ -962,7 +983,7 @@ nav > ul > li a {
   height: 35px;
   margin-left: 5px;
 }
-.footer .contact h6 {
+.footer .contact h5 {
   font-family: Mulish;
   font-size: 1.2em;
   font-weight: bold;
@@ -1156,6 +1177,11 @@ nav > ul > li a {
   }
   .Footer_input input {
     width: 200px;
+    height: 30px;
+  }
+  .Footer_input > div {
+    width: 40px;
+    height: 30px;
   }
   .Footer_heading h1 {
     text-align: center;

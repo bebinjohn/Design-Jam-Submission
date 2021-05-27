@@ -551,7 +551,7 @@ body::-webkit-scrollbar-thumb {
   }
   body,
   html {
-    font-size: 14px;
+    font-size: 10px;
   }
   .footer {
     flex-direction: column;
@@ -570,5 +570,10 @@ body::-webkit-scrollbar-thumb {
   }
   .Footer_input input {
     width: 200px;
+    height: 30px;
+  }
+  .Footer_input > div {
+    width: 40px;
+    height: 30px;
   }
 }
