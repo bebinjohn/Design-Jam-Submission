@@ -2,7 +2,6 @@
   height: 100vh;
   display: flex;
   position: relative;
-  /* background-color: lightgray; */
   background-blend-mode: lighten;
   scroll-snap-align: center;
 }
@@ -13,7 +12,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow: hidden; */
 }
 
 .main {
@@ -34,9 +32,7 @@ body {
   background-size: cover;
 }
 .whole_container {
-  /* overflow-y: scroll; */
   scroll-behavior: smooth;
-  /* scroll-snap-type: y mandatory; */
   height: 100vh;
   width: 100%;
 }
@@ -58,10 +54,6 @@ body {
   background: #ecc181a9;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 a {
   text-decoration: none !important;
 }
@@ -81,7 +73,7 @@ a:hover {
   width: 45%;
 }
 
-/* //Toogle_button */
+/* //Toogle_button  for dark and light*/
 
 .switch {
   position: relative;
@@ -114,7 +106,6 @@ a:hover {
 
 .slider:before {
   position: absolute;
-  /* content: ""; */
   height: 26px;
   width: 26px;
   left: 4px;
@@ -138,7 +129,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
@@ -146,6 +136,8 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* Header background */
 .First_side {
   height: 50%;
   width: 100%;
@@ -297,17 +289,10 @@ nav > ul > li a {
 
 /* how is works styles */
 .Hwt_container {
-  /* background-image: url("https://i.pinimg.com/originals/0a/67/7a/0a677a8b0a0cce3905638076a05f78fd.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh; */
   display: flex;
   flex-direction: column;
   background-color: rgba(173, 216, 230, 0.459);
   padding-bottom: 5%;
-  /* scroll-snap-align: center; */
 }
 .Hwt_container > div {
   display: flex;
@@ -391,7 +376,6 @@ nav > ul > li a {
   width: 100%;
   height: 100%;
   padding-top: 50px;
-  /* margin-top: 5%; */
   display: flex;
   background-size: cover;
   background-position: center;
@@ -402,7 +386,6 @@ nav > ul > li a {
 .Topping_container1 {
   width: 100%;
   height: 100%;
-  /* margin-top: 5%; */
   background-image: linear-gradient(
     170deg,
     rgb(58, 57, 57) 55% 50%,
@@ -869,10 +852,6 @@ nav > ul > li a {
   margin-top: 20vh;
 }
 
-/* .tesa_container {
-  padding: 20px;
-  padding-left: 30px;
-} */
 .tesa_container .User_info {
   text-align: center;
 }
@@ -944,21 +923,10 @@ nav > ul > li a {
   justify-content: center;
 }
 
-/* .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-} */
-
 /* Footer */
 
 .footer {
   width: 100%;
-  /* height: 100vh;
-  scroll-snap-align: center;
-  background-color: #dee4e7; */
   display: flex;
   justify-content: space-around;
   padding: 30px;
@@ -1084,6 +1052,7 @@ nav > ul > li a {
   padding-bottom: 5px;
   font-size: 1em;
 }
+
 /* Mobile view */
 @media only screen and (max-width: 800px) {
   html {

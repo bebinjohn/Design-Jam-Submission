@@ -1,4 +1,4 @@
-// set up text to print, each item in array is new line
+//For Writing effect
 var aText = new Array(
     "Hi , we are making warm, fresh and made-to-order donuts. we have kept our focus on offering a welcoming, family-friendly and delicious experience to everyone that visits  our stores. The teams who manage and work in our stores make all the difference, and we are very proud of their dedication and contributions.", 
     "We love to create donuts, and we love to create smiles! Our many fans tell us we are on the right track, and while there may be other donuts out there—we feel we’ve found a pretty special combination. We’re keeping it simple and delicious!",

@@ -14,6 +14,9 @@ const $span=document.querySelectorAll('span');
 let flag=true;
 let flag1=true;
 
+
+
+//Navabr toggle action
 document.getElementById('toggle').addEventListener('click',()=>{
     if(window.innerWidth<700){
         if(flag1){
@@ -36,6 +39,8 @@ document.getElementById('toggle').addEventListener('click',()=>{
     }
 })
 
+
+//For dark and light mode
 $toogle.addEventListener('click',()=>{
     if(flag){
     document.styleSheets[0].addRule(`.slider:before`,`content:"D";`)

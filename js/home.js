@@ -1,4 +1,6 @@
 
+
+//For covering
 const $fill=document.getElementById('fill')
 document.querySelector('.stawberry_selector').addEventListener('click',()=>{
     if($fill.hasAttribute('fill')) $fill.removeAttribute('fill');
@@ -16,16 +18,19 @@ document.querySelector('.Plain').addEventListener('click',()=>{
     if($fill.hasAttribute('fill')) $fill.removeAttribute('fill');
 })
 
+//For link in Footer
 
 document.querySelector('.Gotop_link').addEventListener('click',()=>{
     document.getElementById('Top').scrollIntoView()
 })
 
+//For Try_Now button
 document.querySelector('.Try_button').addEventListener('click',()=>{
 document.getElementById('Hwt').scrollIntoView()
 })
     
 
+//For Hwt navigation
 document.querySelector('#Hwt_cover').addEventListener('click',()=>{
     document.querySelector('#Topping').scrollIntoView()
 })
@@ -48,6 +53,7 @@ const $footlink=document.querySelectorAll('#foot_link');
 let flag=true;
 
 
+//Function for dark and light mode
 const dark=()=>{
     if(flag){
         document.querySelector('.header_wrapper').style.background='rgb(94, 91, 91)';
@@ -105,14 +111,13 @@ const dark=()=>{
         }
 }
 
+//activates when Mode slider clicked
 $toogle.addEventListener('click',()=>{
-    // console.log('hello')
     dark()
 })
 
 
 //Order animation
-
 
 document.getElementById('order').addEventListener('click',()=>{
     document.querySelector('.Order_container').style.animationPlayState='running';
@@ -146,6 +151,17 @@ const $link2=document.querySelector('#each_link1');
 const $link3=document.querySelector('#each_link3');
 const $link4=document.querySelector('#each_link4');
 window.onscroll=()=>{
+    if(window.innerWidth<800){
+        if(scrollY>300){
+            document.querySelector('#navbar').style.opacity=1;
+            document.querySelector('#navbar').style.transform='translateY(0px)';
+        }
+        else{
+            document.querySelector('#navbar').style.opacity=0;
+            document.querySelector('#navbar').style.transform='translateY(0px)';
+        }
+    }
+    else{
     if(scrollY>400){
         document.querySelector('#navbar').style.opacity=1;
         document.querySelector('#navbar').style.transform='translateY(0px)';
@@ -154,7 +170,7 @@ window.onscroll=()=>{
         document.querySelector('#navbar').style.opacity=0;
         document.querySelector('#navbar').style.transform='translateY(-20px)';
     }
-    // console.log(scrollY)
+            }
     if(scrollY>316&&scrollY<646){
         if(!$link.classList.contains('each_link')){
             $link.classList.add('each_link')
@@ -174,7 +190,7 @@ window.onscroll=()=>{
                 $link2.classList.remove('each_link');
             }
             }
-            else if(scrollY>1112&&scrollY<1656){
+        else if(scrollY>1112&&scrollY<1656){
                 if($link1.classList.contains('each_link')){
                     $link1.classList.remove('each_link');
                 }
@@ -185,7 +201,7 @@ window.onscroll=()=>{
                     $link3.classList.remove('each_link');
                 }
                 }
-                else if(scrollY>1660&&scrollY<2286){
+            else if(scrollY>1660&&scrollY<2286){
                     if($link2.classList.contains('each_link')){
                         $link2.classList.remove('each_link');
                     }
@@ -196,7 +212,7 @@ window.onscroll=()=>{
                         $link4.classList.remove('each_link');
                     }
                     }
-                    else if(scrollY>2286){
+            else if(scrollY>2286){
                         if($link3.classList.contains('each_link')){
                             $link3.classList.remove('each_link');
                         }

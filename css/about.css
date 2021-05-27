@@ -58,14 +58,6 @@ a:hover {
   margin: 40px;
   float: left;
 }
-/* .box > p {
-  color: #fff;
-  width: 0px;
-  height: 0px;
-  overflow: hidden;
-  margin: 0;
-  animation: ani 5s linear forwards;
-} */
 
 body {
   background-image: linear-gradient(
@@ -120,9 +112,6 @@ body {
 
 .footer {
   width: 100%;
-  /* height: 100vh;
-  scroll-snap-align: center;
-  background-color: #dee4e7; */
   display: flex;
   justify-content: space-around;
   padding: 30px;
@@ -251,8 +240,5 @@ body {
   .Footer_input > div {
     width: 40px;
     height: 30px;
-  }
-  body {
-    background-attachment: unset;
   }
 }
