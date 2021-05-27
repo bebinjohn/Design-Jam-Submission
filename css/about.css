@@ -16,7 +16,23 @@ body {
 a {
   text-decoration: none;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: pink;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orchid;
+}
 a:hover {
   text-decoration: none !important;
   color: rgb(109, 103, 103) !important;
@@ -51,13 +67,23 @@ a:hover {
   animation: ani 5s linear forwards;
 } */
 
+body {
+  background-image: linear-gradient(
+    175deg,
+    rgba(251, 246, 251, 1) 50%,
+    rgb(243, 177, 228) 60%
+  );
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 .box p {
   color: white;
-  font-family: Mulish;
+  font-family: Pacifico;
   font-size: 1em;
   margin: 10px 50px;
   letter-spacing: 1px;
-  font-weight: bold;
 }
 .heading1 {
   font-family: "Luckiest Guy";
@@ -90,16 +116,102 @@ a:hover {
   height: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+/* footer */
+
+.footer {
+  width: 100%;
+  /* height: 100vh;
+  scroll-snap-align: center;
+  background-color: #dee4e7; */
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  padding-top: 50px;
+  background-color: rgb(243, 177, 228);
+}
+.footer .Links {
+  list-style: none;
+}
+.footer .Links li a {
+  color: black !important;
+}
+.footer .Links li a:hover {
+  color: rgb(184, 38, 179) !important;
+}
+.footer .Links_section h6 {
+  font-family: Mulish;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.footer .contact img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+}
+.footer .contact h6 {
+  font-family: Mulish;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.footer .social_icons {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+.Footer_heading h1 {
+  font-family: Mulish;
+  font-size: 1.3em;
+  color: #333333;
+}
+.Newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer_input input {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  padding-left: 5px;
+  font-family: Mulish;
+}
+.Footer_input {
+  display: flex;
+  margin-top: 10px;
+}
+.Footer_input input:focus {
+  outline: 0;
+}
+.Footer_input > div {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #ec1f46;
+  border-radius: 0px 4px 4px 0px;
+}
+.Footer_input > div div {
+  color: white;
+  font-family: Mulish;
+}
+@media only screen and (max-width: 800px) {
   body,
   html {
     font-size: 10px;
   }
   .content img {
-    width: 90%;
+    width: 50%;
   }
   .heading1 {
     margin-bottom: 30px;
+  }
+  .Footer_input input {
+    width: 200px;
   }
   .box {
     margin: 0;
@@ -111,11 +223,21 @@ a:hover {
   .box p {
     margin: 0;
   }
+  .footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .Newsletter {
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 10px 0 20px 0;
+  }
+  .Gotop_link {
+    display: none;
+  }
   .content_mobile {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 }

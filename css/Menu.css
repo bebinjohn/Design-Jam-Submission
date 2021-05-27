@@ -176,7 +176,8 @@ input:checked + .slider:before {
   grid-template-columns: 7% 25% 6% 25% 6% 25% 6%;
 }
 
-.Menu_container h1 {
+.Menu_container h1,
+.Menu_container1 h1 {
   font-family: "Luckiest Guy";
   color: rgb(109, 103, 103);
   font-weight: bold;
@@ -274,11 +275,28 @@ input:checked + .slider:before {
 }
 
 .Menu_container {
-  transform: translateY(100vh);
+  transform: translateY(20vh);
   width: 100%;
   opacity: 0;
-  animation: come 15s linear forwards;
-  background-color: lightgray;
+  animation: come 9.5s linear forwards;
+  /* background-color: rgba(251, 246, 251, 1); */
+  background-image: linear-gradient(
+    175deg,
+    rgba(251, 246, 251, 1) 80%,
+    rgba(126, 222, 233, 1) 20%
+  );
+}
+.Menu_container1 {
+  transform: translateY(20vh);
+  width: 100%;
+  opacity: 0;
+  animation: come 9.5s linear forwards;
+  /* background-color: rgba(251, 246, 251, 1); */
+  background-image: linear-gradient(
+    175deg,
+    rgb(58, 57, 57) 55% 80%,
+    rgb(16, 72, 145) 20%
+  );
 }
 
 #navbar {
@@ -286,7 +304,7 @@ input:checked + .slider:before {
 }
 body {
   overflow: hidden;
-  animation: speak 30s linear forwards;
+  animation: speak 19s linear forwards;
 }
 @keyframes speak {
   to {
@@ -347,11 +365,10 @@ main {
 
 .box p {
   color: white;
-  font-family: "Akaya Kanadaka";
+  font-family: "Pacifico";
   font-size: 1em;
   margin: 10px 50px;
   letter-spacing: 1px;
-  font-weight: bold;
 }
 .box.arrow-left:after {
   content: " ";
@@ -373,7 +390,7 @@ body::-webkit-scrollbar-thumb {
 .Welcome {
   display: flex;
   transform: translateX(-100vw);
-  animation: run 8s linear;
+  animation: run 5s linear;
   align-items: center;
   height: 90vh;
 }
@@ -386,11 +403,115 @@ body::-webkit-scrollbar-thumb {
   to {
     transform: translateY(0px);
     position: absolute;
-    top: 10vh;
+    top: 9vh;
     opacity: 1;
   }
 }
-@media only screen and (max-width: 600px) {
+
+/* footer */
+
+.footer {
+  width: 100%;
+  /* height: 100vh;
+  scroll-snap-align: center;
+  background-color: #dee4e7; */
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: rgba(126, 222, 233, 1);
+  position: absolute;
+  top: 1400px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.footer .Links {
+  list-style: none;
+}
+.footer .Links li a {
+  color: gray !important;
+}
+.footer .Links li a:hover {
+  color: salmon !important;
+}
+.footer .Links_section h6 {
+  font-family: Mulish;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.footer .contact img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+}
+.footer .contact h6 {
+  font-family: Mulish;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.footer .social_icons {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+.Footer_heading h1 {
+  font-family: Mulish;
+  font-size: 1.3em;
+  color: #333333;
+}
+.Newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer_input input {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  padding-left: 5px;
+  font-family: Mulish;
+}
+.Footer_input {
+  display: flex;
+  margin-top: 10px;
+}
+.Footer_input input:focus {
+  outline: 0;
+}
+.Footer_input > div {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #ec1f46;
+  border-radius: 0px 4px 4px 0px;
+}
+.Footer_input > div div {
+  color: white;
+  font-family: Mulish;
+}
+
+.Gotop_link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec1f46;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.Gotop_link div {
+  color: white;
+  font-size: 2em;
+  font-family: Mulish;
+  font-weight: bold;
+}
+@media only screen and (max-width: 800px) {
   .Each_menu_container > div {
     display: flex;
     width: 50%;
@@ -431,5 +552,23 @@ body::-webkit-scrollbar-thumb {
   body,
   html {
     font-size: 14px;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .Gotop_link {
+    display: none;
+  }
+  .Newsletter {
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 10px 0 20px 0;
+  }
+  .footer {
+    top: 3975px;
+  }
+  .Footer_input input {
+    width: 200px;
   }
 }
